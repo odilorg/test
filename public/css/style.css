@@ -1,0 +1,636 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Gloucester';
+    src: url(../fonts/Gloucester\ MT\ Extra\ Condensed.ttf);
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat.ttf);
+}
+
+body {
+    width: 1000px;
+    margin: 0 auto;
+    box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.43);
+}
+
+/* header */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    background: #5100FE;
+    position: relative;
+}
+
+.header-userinfo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    background-color: #00000063;
+    border-radius: 0 0 0 3px;
+    padding: 3px;
+}
+
+.header-userinfo__name {
+    color: #fff;
+    font-weight: 200;
+}
+
+.header-userinfo__btn-logout {
+    margin: 0 10px;
+}
+
+.header h1 {
+    font-family: 'Gloucester';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    background: linear-gradient(89.9deg, #26F8F2 11.49%, #FFFFFF 56.46%, rgba(255, 64, 236, 0.84) 98.71%, rgba(255, 64, 236, 0.84));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-left: 30px;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    margin-bottom: 0;
+}
+
+.header ul li {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 15px;
+    color: #FFFFFF;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.header ul li:before {
+    content: '';
+    display: inline-block;
+    align-items: center;
+    width: 7px;
+    height: 7px;
+    background: #00FF38;
+    margin-right: 5px;
+}
+
+.sold h3,
+.sold h4 {
+    font-family: 'Gloucester';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.sold h4 {
+    margin-bottom: 0;
+}
+
+.sold {
+    border: 1px solid #FFB800;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 8px 5px;
+    margin-right: 20px;
+}
+
+/* header end */
+
+/* header nav */
+
+.header_nav {
+    display: flex;
+    justify-content: start;
+    padding: 15px 14px 15px 32px;
+    background: #FFB800;
+}
+
+.tiktok {
+    background: #FFFFFF;
+    border-radius: 3px;
+    padding: 3px 32px 3px 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tiktok img {
+    margin-right: 10px;
+}
+
+.tiktok {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.header_nav ul {
+    margin: 0 auto;
+    align-items: center;
+}
+
+.header_nav ul li {
+    margin-right: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.before:before {
+    content: '';
+    display: inline-block;
+    height: 40px;
+    width: 1px;
+    background: #000;
+    margin-right: 25px;
+}
+
+.header_nav ul li a {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.header_nav ul li button {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+    text-decoration: none;
+    background-color: transparent;
+    border-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+.header_nav ul li button:focus {
+    color: #000000;
+    text-decoration: none;
+    background-color: transparent;
+    border-color: transparent;
+    box-shadow: none;
+}
+
+.header_nav ul li button:hover {
+    color: #000000;
+    text-decoration: none;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.btn-primary:active:focus,
+.show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: none;
+}
+
+/* .header nav end */
+
+/* main */
+
+.main {
+    height: 1000px;
+    width: 1000px;
+    /* border: 1px rgb(164, 164, 164) solid; */
+}
+
+.modal-header h5 {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    border-bottom: none !important;
+}
+
+/* modal info*/
+
+#staticBackdrop .modal-footer,
+#staticBackdrop .modal-header {
+    border: none;
+}
+
+#staticBackdrop .modal-body {
+    margin: 0 50px;
+    padding: 0;
+}
+
+#staticBackdrop .modal-body h5 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+}
+
+#staticBackdrop .modal-body p {
+    font-family: 'Cambria';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 0.01em;
+    color: #000000;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+#staticBackdrop .modal-footer {
+    justify-content: center;
+}
+
+#about_us .modal-footer {
+    justify-content:center;
+}
+
+#about_us .modal-footer button {
+    margin: 30px 0 15px;
+    background: #000000;
+    border-radius: 11px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 12px 40px;
+    text-decoration: none;
+}
+
+#staticBackdrop .btn-close {
+    opacity: 1;
+    box-shadow: 0;
+}
+
+#staticBackdrop .btn-close:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+/* modal info end*/
+
+/* modal sell */
+
+#staticBackdrop2 .modal-footer,
+#staticBackdrop2 .modal-header {
+    border: none;
+}
+
+#staticBackdrop2 .modal-body {
+    margin: 0 50px;
+    padding: 0;
+}
+
+#staticBackdrop2 .modal-body h5 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+    padding: 0;
+}
+
+#staticBackdrop2 .modal-body input {
+    background: #CCC3C3;
+    border-radius: 8px;
+    max-width: 300px;
+    width: 100%;
+    display: flex;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 9px 0 9px 19px;
+}
+
+#staticBackdrop2 .modal-body h3 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #000000;
+    margin-top: 20px;
+}
+
+#staticBackdrop2 .video {
+    background: #C4C4C4;
+    border-radius: 10px;
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#staticBackdrop2 .video img {
+    display: block;
+    margin: 0 auto;
+    padding-top: 76px;
+    padding-bottom: 76px;
+}
+
+#staticBackdrop2 .modal-body h4 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+    margin-top: 50px;
+}
+
+#staticBackdrop2 .visa img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+#staticBackdrop2 .modal-body button {
+    background: #000000;
+    border-radius: 11px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: block;
+    padding: 12px 30px;
+}
+
+#staticBackdrop2 .btn-close {
+    opacity: 1;
+    box-shadow: 0;
+}
+
+#staticBackdrop2 .btn-close:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+/* modal sell end */
+
+/* modal pixels */
+
+#staticBackdrop3 .modal-footer,
+#staticBackdrop3 .modal-header {
+    border: none;
+}
+
+#staticBackdrop3 .modal-body {
+    padding: 0;
+}
+
+#staticBackdrop3 .modal-body h5 {
+    background: #001AFF;
+    border-radius: 8px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 12px 30px;
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#staticBackdrop3 .modal-footer {
+    justify-content: center;
+}
+
+#staticBackdrop3 .modal-footer a {
+    background: #001AFF;
+    border-radius: 8px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 12px 30px;
+    text-decoration: none;
+}
+
+#staticBackdrop3 .pixels {
+    width: 1000px;
+    height: 1000px;
+    margin: 0 auto;
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbEdzBge1ZN89MWfx8r6edoGeGsm04Sgqyk3h2A8YdBM8u4b9-9A) repeat center;
+    background-size: 3px;
+    margin-top: 20px;
+}
+
+#staticBackdrop3 .modal-dialog {
+    max-width: 1002px !important;
+    width: 100%;
+}
+
+#staticBackdrop3 .btn-close {
+    opacity: 1;
+    box-shadow: 0;
+}
+
+#staticBackdrop3 .btn-close:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+/* modal pixels end */
+
+/* modal card  */
+
+#staticBackdrop4 .modal-footer,
+#staticBackdrop4 .modal-header {
+    border: none;
+}
+
+#staticBackdrop4 .modal-body {
+    padding: 0;
+}
+
+#staticBackdrop4 .modal-body h5 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+}
+
+#staticBackdrop4 .modal-content {
+    background: #E5E5E5;
+}
+
+#staticBackdrop4 .form {
+    background: #FFFFFF;
+    max-width: 350px;
+    width: 100%;
+    border-radius: 8px;
+    margin: 0 auto;
+    padding: 28px 8px 30px 8px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+#staticBackdrop4 .form h4 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+}
+
+#staticBackdrop4 .form input {
+    max-width: 300px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 13px 14px;
+    margin-top: 27px;
+}
+
+#staticBackdrop4 .form button {
+    background: #4200FF;
+    border: 1px solid #0500FF;
+    box-sizing: border-box;
+    border-radius: 5px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    max-width: 300px;
+    width: 100%;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    margin-top: 16px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+#staticBackdrop4 .btn-close {
+    opacity: 1;
+    box-shadow: 0;
+}
+
+#staticBackdrop4 .btn-close:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+/* modal card end */
+
+/* modal congratulations */
+
+#staticBackdrop5 .modal-footer,
+#staticBackdrop5 .modal-header {
+    border: none;
+}
+
+#staticBackdrop5 .modal-body {
+    padding: 0;
+}
+
+.modal-body h5 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #000000;
+}
+
+.modal-body img{
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#staticBackdrop5 .btn-close {
+    opacity: 1;
+    box-shadow: 0;
+}
+
+#staticBackdrop5 .btn-close:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+/* modal congratulations end*/
+
+.bg {
+    background-color: #fff;
+}
+
+
+@media only screen and (max-width:460px) {
+    .header h1 {
+        font-size: 26px;
+    }
+}
+
+.__active {
+    display: block;
+}
+
+#theimage,
+#pixelimg {
+    background: url(https://www.milliontiktokershomepage.com/img/main1.png?v1.34) no-repeat center;
+    background-position-y: 0.1px;
+    background-position-x: -0.4px;
+}
+
+#theimage {
+    background-position-y: -0.4px;
+    background-position-x: -0.5px;
+}
